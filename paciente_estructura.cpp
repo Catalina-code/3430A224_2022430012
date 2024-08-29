@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string> // Necesario para usar std::string
+#include <string>
 
 using namespace std;
 
@@ -12,33 +12,43 @@ struct Paciente {
 };
 
 int main() {
-    /// Crear un arreglo de 3 Paciente
-    Paciente pacientes[3];
+    // Crear pacientes
+    Paciente paciente1; 
+    paciente1.nombre = "Eduardo";
+    paciente1.edad = 22;
+    paciente1.peso = 80;
+    paciente1.altura = 1.80;
 
-    /// Inicializar el arreglo con datos
-    pacientes[0].nombre = "Juanita";
-    pacientes[0].edad = 30;
-    pacientes[0].peso = 70.5;
-    pacientes[0].altura = 1.75;
+    Paciente paciente2;
+    paciente2.nombre = "Juanita";
+    paciente2.edad = 18;
+    paciente2.peso = 65;
+    paciente2.altura = 1.63;
 
-    pacientes[1].nombre = "Pepita";
-    pacientes[1].edad = 25;
-    pacientes[1].peso = 60.2;
-    pacientes[1].altura = 1.68;
+    Paciente paciente3;
+    paciente3.nombre = "Raúl";
+    paciente3.edad = 45;
+    paciente3.peso = 90;
+    paciente3.altura = 1.77;
 
-    pacientes[2].nombre = "Cristina";
-    pacientes[2].edad = 40;
-    pacientes[2].peso = 80.3;
-    pacientes[2].altura = 1.80;
+/// Información paciente
+    cout << "Paciente 1:" << endl;
+    cout << "Nombre: " << paciente1.nombre << endl;
+    cout << "Edad: " << paciente1.edad << " años" << endl;
+    cout << "Peso: " << paciente1.peso << " kg" << endl;
+    cout << "Altura: " << paciente1.altura << " m" << endl << endl;
 
-    /// Acceder e imprimir la información de cada paciente
-    for (int i = 0; i < 3; ++i) {
-        cout << "Paciente " << (i + 1) << ": " << pacientes[i].nombre << endl;
-        cout << "Edad: " << pacientes[i].edad << " años" << endl;
-        cout << "Peso: " << pacientes[i].peso << " kg" << endl;
-        cout << "Altura: " << pacientes[i].altura << " m" << endl;
-        cout << endl;
-    }
+    cout << "Paciente 2:" << endl;
+    cout << "Nombre: " << paciente2.nombre << endl;
+    cout << "Edad: " << paciente2.edad << " años" << endl;
+    cout << "Peso: " << paciente2.peso << " kg" << endl;
+    cout << "Altura: " << paciente2.altura << " m" << endl << endl;
+
+    cout << "Paciente 3:" << endl;
+    cout << "Nombre: " << paciente3.nombre << endl;
+    cout << "Edad: " << paciente3.edad << " años" << endl;
+    cout << "Peso: " << paciente3.peso << " kg" << endl;
+    cout << "Altura: " << paciente3.altura << " m" << endl;
 
     return 0;
 }
